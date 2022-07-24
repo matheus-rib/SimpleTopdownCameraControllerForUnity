@@ -37,45 +37,45 @@ This project was made as a study case. Feel free to leave your suggestions for e
 ## Images
 ### Gameobject Transparency
 A Cube and a PolyShape opaque:<br/>
-[![Opaque Gameobjects](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/features/OpaqueGameobjects.png)](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/features/OpaqueGameobjects.png)
+[![Opaque Gameobjects](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/features/OpaqueGameobjects.png)](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/features/OpaqueGameobjects.png)<br/>
 The same Cube when Player is behind it:<br/>
-[![Transparent Cube](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/features/TransparentCube.png)](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/features/TransparentCube.png)
+[![Transparent Cube](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/features/TransparentCube.png)](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/features/TransparentCube.png)<br/>
 The same PolyShape when Player is behind it:<br/>
 [![Transparent Shape](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/features/TransparentShape.png)](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/features/TransparentShape.png)
 
 ## How to setup and use
 ### Camera and Controller
 - Create your Scene.
-- Add the `TopDownCamera.cs` script in your Camera Gameobject.
+- Add the `TopDownCamera.cs` script in your Camera Gameobject.<br/>
 [![Camera Script Setup](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/setup/CameraScriptSetup.png)](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/setup/CameraScriptSetup.png)
-- Create your Player object (in e.g. a Capsule).
+- Create your Player object (in e.g. a Capsule).<br/>
 [![Player Creation](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/setup/PlayerCreation.png)](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/setup/PlayerCreation.png)
-- Select your Camera object, Drag your Player Object (in Hierarchy) to Camera's Target attribute.
+- Select your Camera object, Drag your Player Object (in Hierarchy) to Camera's Target attribute.<br/>
 [![Drag and Drop Player on Camera](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/setup/DragAndDropPlayerOnCamera.png)](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/setup/DragAndDropPlayerOnCamera.png)
 - Add the `PlayerController.cs` script on your Player Gameobject.
 - Add the following components: `RigidBody`, `CharacterController`, `CapsuleCollider`;
   - Adjust both your `CharacterController` and `CapsuleCollider` with same `Center`, `Radius` and `Height` to fit your Player asset/Capsule. 
-  - Check `RigidBody`'s Freeze Rotation on `X`, `Y` and `Z` axis.
+  - Check `RigidBody`'s Freeze Rotation on `X`, `Y` and `Z` axis.<br/>
 [![Player Setup](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/setup/PlayerSetup.png)](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/setup/PlayerSetup.png)
 
 ### Animator
 - Create an `AnimatorController`.
-- Add an `Animator Component` in your Player Gameobject and drag and drop your created `AnimatorController` into `Controller` field.
+- Add an `Animator Component` in your Player Gameobject and drag and drop your created `AnimatorController` into `Controller` field.<br/>
 [![Player Animator](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/setup/PlayerAnimator.png)](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/setup/PlayerAnimator.png)
 - Open Animator window (if it's not opened already): Window -> Animation -> Animator.
 - Drag and Drop your animations (idle, walk and run).
 - Right-click the idle animation and `Set as Layer Default State`.
 - Right-click idle animation again and `Make Transition`, and Left-Click your Walk animation.
-  - Create trasitions for: Walk to Idle, Walk to Running and Running to Walk animations.
+  - Create trasitions for: Walk to Idle, Walk to Running and Running to Walk animations.<br/>
 [![Animator Overview](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/setup/AnimatorOverview.png)](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/setup/AnimatorOverview.png)
-- On `Parameters` tab, create two Bool values: `isWalking` and `isRunning`
+- On `Parameters` tab, create two Bool values: `isWalking` and `isRunning`<br/>
 [![Animator Parameters](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/setup/AnimatorBoolean.png)](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/setup/AnimatorBoolean.png)
 - Add the following `conditions` to your transitions:
   - Idle to Walk: `isWalking` -> `true`
   - Walk to Idle: `isWalking` -> `false`
   - Walk to Run: `isRunning` -> `true`
   - Run to Walk: `isRunning` -> `false`
-    - Animation condition example:
+    - Animation condition example:<br/>
 [![Animation Condition Example](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/setup/AnimationTransitionConditionExample.png)](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/setup/AnimationTransitionConditionExample.png)
 
 ### Basic controllers
