@@ -30,7 +30,7 @@ The same Cube when Player is behind it:<br/>
 [![Transparent Cube](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/features/TransparentCube.png)](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/features/TransparentCube.png)
 
 The same PolyShape when Player is behind it:<br/>
-[![Transparent Shape](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/features/TransparentCube.png)](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/features/TransparentCube.png)
+[![Transparent Shape](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/features/TransparentShape.png)](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/features/TransparentShape.png)
 
 ## How to setup and use
 ### Camera and Controller
