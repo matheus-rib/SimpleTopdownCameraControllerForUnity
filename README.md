@@ -2,9 +2,21 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/LICENSE.md)
 
 A simple topdown camera controller made for Unity that works with minimum setup and no programming. Perfect for beginners.
-
 ## Disclaimer
 This project was made as a study case. Feel free to leave your suggestions for enhancing it. It's not guaranteed it was made using Unity best practices or it doesn't have critical flaws.
+
+## Table of content:
+- [Features](#features)
+  - [Camera](#camera)
+  - [Controller](#controller)
+- [Images](#images)
+  - [Gameobject Transparency](#gameobject-transparency)
+- [How to setup and use](#how-to-setup-and-use)
+  - [Camera and Controller](#camera-and-controller)
+  - [Animator](#animator)
+  - [Basic controllers](#basic-controllers)
+- [Troubleshooting](#troubleshooting)
+- [Known issues](#known-issues)
 
 ## Features
 ### Camera
@@ -28,9 +40,8 @@ A Cube and a PolyShape opaque:<br/>
 [![Opaque Gameobjects](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/features/OpaqueGameobjects.png)](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/features/OpaqueGameobjects.png)
 The same Cube when Player is behind it:<br/>
 [![Transparent Cube](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/features/TransparentCube.png)](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/features/TransparentCube.png)
-
 The same PolyShape when Player is behind it:<br/>
-[![Transparent Shape](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/features/TransparentShape.png)](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/features/TransparentShape.png)
+[![Transparent Shape](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/features/TransparentCube.png)](https://github.com/matheus-rib/SimpleTopdownCameraControllerForUnity/blob/main/images/features/TransparentCube.png)
 
 ## How to setup and use
 ### Camera and Controller
